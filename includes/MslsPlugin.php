@@ -55,8 +55,8 @@ class MslsPlugin {
 
 			if ( is_admin() ) {
 				add_action( 'admin_menu', array( MslsAdmin::class, 'init' ) );
-				add_action( 'load-post.php', array( MslsMetaBox::class, 'init' ) );
-				add_action( 'load-post-new.php', array( MslsMetaBox::class, 'init' ) );
+				// add_action( 'load-post.php', array( MslsMetaBox::class, 'init' ) );
+				// add_action( 'load-post-new.php', array( MslsMetaBox::class, 'init' ) );
 				add_action( 'load-edit.php', array( MslsCustomColumn::class, 'init' ) );
 				add_action( 'load-edit.php', array( MslsCustomFilter::class, 'init' ) );
 
